@@ -37,6 +37,8 @@ There is no universal "good" cutoff for most classification metrics. Interpret p
 
 Accuracy can be particularly misleading with class imbalance, so the notebook also reports class-sensitive metrics and ranking metrics.
 
+The threshold table in the notebook is a descriptive sensitivity check on held-out test predictions, not a threshold-selection procedure. In a real workflow, tune or select the operating threshold using training/validation data (or an appropriately nested resampling procedure), lock it, and evaluate that final threshold once on untouched test data.
+
 ## Reproducibility
 
 The example:
